@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def btc_events():
-    return "Welcome to BTC Events"
+    return render_template('home.html')
