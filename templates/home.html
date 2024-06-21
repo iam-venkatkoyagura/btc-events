@@ -35,6 +35,15 @@
                 </div>
             </div>
             <h2 class="text-center mt-2 mb-2">BTC Events</h2>
+                <div>
+                    {% for event in events %}
+                    <div>
+                        <h4>{{event['event_name']}}</h4>
+                        <div><b>Date </b>{{event['event_start_date']}}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            
             <div class="text-center">
                 <button class="btn btn-primary btn-lg">Contact Us</button>
                 <p class="mt-4 card-footer">Copyright 2024, Brindavan</p>
